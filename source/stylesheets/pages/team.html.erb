@@ -1,0 +1,10 @@
+<% members = %w(Jules, Guillaume, Baptiste) %>
+<div class="container text-center padded">
+  <ul class="list-inline">
+    <% User.|.each do |member| %>
+      <li>
+        <h3><%= member%></h3>
+      </li>
+    <%end%>
+  </ul>
+</div>
